@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Figtree, sans-serif;
+  background-color: hsl(47, 88%, 63%);
+}
+
+.container {
+  padding-inline: 1rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.4rem;
+  max-width: 400px;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  border-radius: 0.8rem;
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 10px 10px;
+  height: fit-content;
+}
+.card > * + * {
+  margin-top: 1rem;
+}
+.card > img {
+  border-radius: 0.5rem;
+}
+.card_category {
+  font-weight: 800;
+  background-color: hsl(47, 88%, 63%);
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.2rem;
+}
+.card_published {
+  font-weight: 600;
+}
+.card_main_text {
+  font-weight: 800;
+}
+.card_description {
+  color: hsl(0, 0%, 50%);
+  font-weight: 500;
+}
+.card_owner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card_owner img {
+  width: 2.5rem;
+  aspect-ratio: 1;
+}
+.card_owner_name {
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=main.css.map */
